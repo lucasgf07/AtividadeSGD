@@ -7,6 +7,12 @@ public class Main {
 
     public static Random random = new Random();
 
+    public static  char sortearConsoante(){
+        String consoantes = "bcdfghjklmnpqrstvwxyz";
+        char[] consoante = consoantes.toCharArray();
+
+        return consoante[random.nextInt(21)];
+    }
 
     public static char sortearVogal(){
 
@@ -17,12 +23,6 @@ public class Main {
 
     }
 
-    public static char sortearConssoante(){
-        String conssoantes = "bcdfghjklmnpqrstwxyz";
-        char[] conssoante = conssoantes.toCharArray();
-
-        return conssoante[random.nextInt(10)];
-    }
 
     public static char sortearNumero(){
         String numeros = "01234567";
@@ -37,9 +37,9 @@ public class Main {
 
         List<String> palavras = new ArrayList();
 
-        System.out.println("OUTPUT : ");
-        while(palavras.size() < 100){
-            String letra = ("" + sortearConssoante() + sortearVogal() + sortearConssoante() + sortearVogal() + sortearConssoante() + sortearVogal() + sortearNumero() + sortearNumero());
+        while(palavras.size() < 10000){
+            String letra = ("" + sortearConsoante() + sortearVogal() + sortearConsoante() + sortearVogal() +
+                    sortearConsoante() + sortearVogal() + sortearNumero() + sortearNumero());
             if(!palavras.contains(letra)){
                 System.out.println(letra);
                 palavras.add(letra);
