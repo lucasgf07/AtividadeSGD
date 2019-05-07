@@ -28,7 +28,7 @@ No main e concatenado as Strings que são randomicamente geradas em uma lista qu
 ## Quantas palavras são possíveis de serem criadas? 
 
 ```
-21 * 21 * 21 * 5 * 5 * 5 * 8 * 8 = 74.088.000
+20 * 20 * 20 * 5 * 5 * 5 * 8 * 8 = 64000000
 ```
 ## Equipe 
 
