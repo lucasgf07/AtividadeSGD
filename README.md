@@ -17,3 +17,6 @@ sortearConssoante : Separa o grupo de conssoantes C={b,c,d,f,g,h,j,l,m,n,p,q,r,s
 ```
 sortearNumero : Separa o grupo de numeros A={0,1,2,3,4,5,6,7} e sorteia-os aleatoriamente usando random
 ```
+# Main
+
+No main e concatenado as Strings que são randomicamente geradas em uma lista que e apresentada no log do sistema.
