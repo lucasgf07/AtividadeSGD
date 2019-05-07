@@ -8,10 +8,10 @@ public class Main {
     public static Random random = new Random();
 
     public static  char sortearConsoante(){
-        String consoantes = "bcdfghjklmnpqrstvwxyz";
+        String consoantes = "bcdfghjklmnpqrstvxyz";
         char[] consoante = consoantes.toCharArray();
 
-        return consoante[random.nextInt(21)];
+        return consoante[random.nextInt(20)];
     }
 
     public static char sortearVogal(){
