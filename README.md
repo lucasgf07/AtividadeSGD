@@ -24,3 +24,14 @@ sortearNumero : Separa o grupo de numeros A={0,1,2,3,4,5,6,7} e sorteia-os aleat
 # Main
 
 No main e concatenado as Strings que são randomicamente geradas em uma lista que e apresentada no log do sistema.
+
+## Quantas palavras são possíveis de serem criadas? 
+
+```
+21 * 21 * 21 * 5 * 5 * 5 * 8 * 8 = 74.088.000
+```
+## Equipe 
+
+```
+Lucas Garrido , Raul Coelho , Romulo Pereira
+```
