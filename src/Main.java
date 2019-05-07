@@ -17,17 +17,29 @@ public class Main {
 
     }
 
-    public static char sortearNumero(){
-        
+    public static char sortearConssoante(){
+        String conssoantes = "bcdfghjklmnpqrstwxyz";
+        char[] conssoante = conssoantes.toCharArray();
+
+        return conssoante[random.nextInt(10)];
     }
+
+    public static char sortearNumero(){
+        String numeros = "01234567";
+        char[] numero = numeros.toCharArray();
+
+        return numero[random.nextInt(8)];
+    }
+
 
     public static void main(String[] args) {
 
 
         List<String> palavras = new ArrayList();
 
-        while(palavras.size() < 5){
-            String letra = ("" + sortearVogal());
+        System.out.println("OUTPUT : ");
+        while(palavras.size() < 100){
+            String letra = ("" + sortearConssoante() + sortearVogal() + sortearConssoante() + sortearVogal() + sortearConssoante() + sortearVogal() + sortearNumero() + sortearNumero());
             if(!palavras.contains(letra)){
                 System.out.println(letra);
                 palavras.add(letra);
